@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "worker": "cloudflared tunnel --hostname=api.moondogmidi.com localhost:9001",
+    "tunnel": "cloudflared tunnel --hostname=api.moondogmidi.com localhost:9001",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
