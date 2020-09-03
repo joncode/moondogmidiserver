@@ -1,0 +1,26 @@
+{
+  "name": "moondogmidiserver",
+  "version": "1.0.0",
+  "description": "Moon Dog Midi Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "worker": "cloudflared tunnel --hostname=api.moondogmidi.com localhost:9001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joncode/moondogmidiserver.git"
+  },
+  "author": "Randy Lebeau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joncode/moondogmidiserver/issues"
+  },
+  "homepage": "https://github.com/joncode/moondogmidiserver#readme",
+  "dependencies": {
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v18.4.0",
+    "uuid": "^8.3.0"
+  }
+}
